@@ -1,4 +1,8 @@
-import React from 'react';
+import React from 'react'
+
+const Hello = props => {
+  return <h1>Hello world</h1>
+}
 
 class App extends React.Component {
   constructor (props) {
@@ -6,9 +10,12 @@ class App extends React.Component {
     this.state = {}
   }
   render () {
-    return ()
-      <div />}
-
+    return (
+      <div>
+        <Hello />
+      </div>
+    )
+  }
 }
 
 export default App

@@ -1,19 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
+import './App.css'
 
-const Hello = props => {
-  return <h1>Hello world</h1>
-}
-
-class App extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {}
-  }
-
+class App extends Component {
   render () {
     return (
-      <div>
-        <Hello />
+      <div className='App'>
+        <h2>塔を建てるときは、まず座って費用を計算しよう</h2>
       </div>
     )
   }

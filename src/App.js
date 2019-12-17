@@ -1,5 +1,9 @@
 import React from 'react'
-import './App.css'
+
+const Hello = props => {
+  return <h1>Hello world</h1>
+}
+
 class App extends React.Component {
   constructor (props) {
     super(props)
@@ -8,10 +12,11 @@ class App extends React.Component {
 
   render () {
     return (
-      <div className='App'>
-        <h2>塔を建てる時は、まず座って費用を計算しよう</h2>
+      <div>
+        <Hello />
       </div>
     )
   }
 }
+
 export default App

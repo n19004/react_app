@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Hello = props => {
+const Greeting = props => {
   const r = Math.floor(Math.random() * 3)
   if (r === 0) return <p>今日もがんばりましょう</p>
   if (r === 1) return <p>こんにちは</p>
@@ -16,7 +16,7 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <Hello />
+        <Greeting />
       </div>
     )
   }

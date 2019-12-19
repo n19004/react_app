@@ -1,21 +1,28 @@
-import React from 'react'
+import React, { Component } from 'react'
+class App extends Component {
+  construdtor (props) {
+    console.log('constructor')
+  }
 
-const Hello = props => {
-  const item = 'SDカード'
-  const value = 1200
-  return <h1>{item} - {value}円</h1>
-}
+  shouldComponentUpdate (nextProps, nextState) {
+    console.log('shouldComponentUpdate')
+    return true
+  }
 
-class App extends React.Component {
-  constructor (props) {
-    super(props)
-    this.state = {}
+  componentDidUpdate () {
+    console.log('componentDidUpdate')
   }
 
   render () {
+    console.log('render')
+    const setStateHandler = e => {
+      console.log('* call setState()')
+      this.setState({ r: Math.random() })
+    }
+
     return (
       <div>
-        <Hello />
+        <button onClick={setStateHandler}>setState</button>
       </div>
     )
   }

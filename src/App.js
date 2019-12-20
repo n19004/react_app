@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Greeting = props => {}
+const Hello = props => {}
 
 class App extends React.Component {
   constructor (props) {
@@ -11,7 +11,7 @@ class App extends React.Component {
   render () {
     return (
       <div>
-        <Greeting />
+        <Hello />
       </div>
     )
   }
